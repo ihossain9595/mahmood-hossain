@@ -1,0 +1,117 @@
+/* --------------------------- */
+/* ----- UNIVERSAL STYLE ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #303a52;
+}
+/* ----- UNIVERSAL STYLE ----- */
+/* --------------------------- */
+/*
+*/
+/*
+*/
+/*
+*/
+/* ------------------ */
+/* ----- HEADER ----- */
+.header__container {
+  padding: 4.8rem 9.6rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.header__logo-image {
+  height: 7.4rem;
+}
+
+.header__navigation-lists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+}
+
+.header__navigation-list {
+  list-style: none;
+}
+
+.header__navigation-link:link,
+.header__navigation-link:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #a8c6d9;
+  transition: all 0.3s;
+}
+
+.header__navigation-link:hover,
+.header__navigation-link:active {
+  color: #226089;
+}
+
+.header__navigation-link.header__navigation-link-active {
+  color: #226089;
+}
+/* ----- HEADER ----- */
+/* ------------------ */
+/*
+*/
+/*
+*/
+/*
+*/
+/* ------------------ */
+/* ----- FOOTER ----- */
+.footer__container {
+  padding: 4.8rem 9.6rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.footer__email {
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.footer__email-link:link,
+.footer__email-link:visited {
+  text-decoration: none;
+  color: #303a52;
+}
+
+.footer__social-box {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.footer__social-link:link,
+.footer__social-link:visited {
+  display: block;
+}
+
+.footer__social-image {
+  height: 1.6rem;
+}
+/* ----- FOOTER ----- */
+/* ------------------ */
