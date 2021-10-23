@@ -1,2 +1,2 @@
-# mahmood-hossain
+# Mahmood Hossain
 A simple portfolio page
