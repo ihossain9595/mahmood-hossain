@@ -27,7 +27,7 @@ body {
 /* ------------------ */
 /* ----- HEADER ----- */
 .header__container {
-  /* background-color: #22a6b3; */
+  background-color: #22a6b3;
   padding: 4.8rem 9.6rem;
 
   display: flex;
@@ -79,7 +79,7 @@ body {
 /* ------------------ */
 /* ----- FOOTER ----- */
 .footer__container {
-  /* background-color: #22a6b3; */
+  background-color: #22a6b3;
   padding: 4.8rem 9.6rem;
 
   display: flex;
@@ -199,12 +199,10 @@ body {
 .card {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 0 3.2rem;
+  padding: 2.4rem 3.2rem;
 }
 
 .card__container {
-  padding: 2.4rem 0;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1.6rem;
@@ -273,3 +271,99 @@ body {
 }
 /* ----- CARD ----- */
 /* ---------------- */
+/*
+*/
+/*
+*/
+/*
+*/
+/* --------------- */
+/* ----- CTA ----- */
+.cta {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  /* background-color: #e67e22; */
+}
+
+.cta__container {
+  height: calc(100vh - 17.15rem);
+
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+.cta__information-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.cta__title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #a8c6d9;
+  margin-bottom: 0.8rem;
+}
+
+.cta__description {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.6rem;
+  color: #226089;
+  transition: all 0.2s;
+}
+
+.cta__description:hover {
+  color: #184360;
+}
+
+.cta__description-link:link,
+.cta__description-link:visited {
+  text-decoration: none;
+  color: #226089;
+  transition: all 0.2s;
+}
+
+.cta__description-link:hover,
+.cta__description-link:active {
+  color: #184360;
+}
+
+.cta__social-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cta__social-link {
+  display: block;
+}
+
+#cta__social-image-svg {
+  height: 2rem;
+}
+
+.cta__social-image-svg1,
+.cta__social-image-svg2 {
+  transition: all 0.2s;
+}
+
+.cta__social-link:hover .cta__social-image-svg1 {
+  fill: #184360;
+}
+
+.cta__social-link:hover .cta__social-image-svg2 {
+  fill: #184360;
+  stroke: #184360;
+}
+/* ----- CTA ----- */
+/* --------------- */
+/*
+*/
+/*
+*/
+/*
+*/
