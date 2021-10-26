@@ -27,7 +27,7 @@ body {
 /* ------------------ */
 /* ----- HEADER ----- */
 .header__container {
-  background-color: #22a6b3;
+  /* background-color: #22a6b3; */
   padding: 4.8rem 9.6rem;
 
   display: flex;
@@ -57,7 +57,7 @@ body {
   font-size: 1.6rem;
   font-weight: 600;
   color: #a8c6d9;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .header__navigation-link:hover,
@@ -79,7 +79,7 @@ body {
 /* ------------------ */
 /* ----- FOOTER ----- */
 .footer__container {
-  background-color: #22a6b3;
+  /* background-color: #22a6b3; */
   padding: 4.8rem 9.6rem;
 
   display: flex;
@@ -283,7 +283,6 @@ body {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
-  /* background-color: #e67e22; */
 }
 
 .cta__container {
@@ -367,3 +366,130 @@ body {
 */
 /*
 */
+/* -------------------------- */
+/* ---------- HERO ---------- */
+.hero {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.hero__container {
+  height: calc(100vh - 17.15rem);
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.hero__image {
+  position: fixed;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  right: 50%;
+}
+
+.hero__information-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.hero__author-title-small {
+  text-transform: uppercase;
+  color: #226089;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.hero__author-title-big {
+  text-transform: uppercase;
+  color: #226089;
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.hero__client,
+.hero__author-description,
+.hero__client-description {
+  font-size: 1.4rem;
+  line-height: 2.2;
+  display: inline-block;
+}
+
+.hero__client-box {
+  display: inline-block;
+  position: relative;
+}
+
+.hero__client {
+  font-weight: 600;
+  color: #226089;
+}
+
+.hero__client-box .hero__client::after {
+  background-color: #226089;
+  position: absolute;
+  content: "";
+  height: 0.3rem;
+  width: 0;
+  bottom: 0.3rem;
+  left: 0;
+  transition: width 0.5s;
+}
+
+.hero__client-box:hover .hero__client::after {
+  width: 50%;
+}
+
+.hero__testimonial-box {
+  position: relative;
+}
+
+.hero__testimonial-title {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 2.4rem;
+  color: #a8c6d9;
+}
+
+.hero__testimonial-description {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+}
+
+.hero__testimonial-image {
+  position: absolute;
+  width: 50px;
+  top: 25px;
+  left: -15px;
+}
+
+.hero__testimonial-dots {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.hero__testimonial-dot {
+  background-color: #a8c6d9;
+  cursor: pointer;
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.hero__testimonial-dot:hover {
+  background-color: #226089;
+}
+
+.hero__testimonial-dot-active {
+  background-color: #226089;
+}
+/* ---------- HERO ---------- */
+/* -------------------------- */
