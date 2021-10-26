@@ -390,7 +390,6 @@ body {
 }
 
 .hero__information-box {
-  background-color: aquamarine;
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
