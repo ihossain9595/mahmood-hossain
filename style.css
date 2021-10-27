@@ -364,8 +364,8 @@ body {
 */
 /*
 */
-/* -------------------------- */
-/* ---------- HERO ---------- */
+/* ---------------- */
+/* ----- HERO ----- */
 .hero {
   max-width: 120rem;
   margin: 0 auto;
@@ -495,5 +495,99 @@ body {
 .hero__testimonial-dot-active {
   background-color: #226089;
 }
-/* ---------- HERO ---------- */
-/* -------------------------- */
+/* ----- HERO ----- */
+/* ---------------- */
+/*
+*/
+/*
+*/
+/*
+*/
+/* --------------------- */
+/* ----- PORTFOLIO ----- */
+.portfolio {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 2.4rem 3.2rem;
+}
+
+.portfolio__container {
+  display: grid;
+  grid-template-columns: 1fr 30rem;
+  column-gap: 4.8rem;
+  row-gap: 4.8rem;
+}
+
+.portfolio__back-link:link,
+.portfolio__back-link:visited {
+  grid-column: 1 / -1;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #226089;
+  transition: all 0.3s;
+}
+
+.portfolio__back-link:hover,
+.portfolio__back-link:active {
+  color: #184360;
+}
+
+.portfolio__title-01 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #226089;
+  margin-bottom: 2rem;
+}
+
+.portfolio__description-01 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.portfolio__detail-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.portfolio__title-02 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #a8c6d9;
+  margin-bottom: 0.8rem;
+}
+
+.portfolio__description-02 {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #226089;
+}
+
+.portfolio__image-boxes {
+  grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+
+.portfolio__image-box {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.portfolio__image {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  border-radius: 6px;
+}
+/* ----- PORTFOLIO ----- */
+/* --------------------- */
