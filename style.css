@@ -378,6 +378,7 @@ body {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
+  column-gap: 4.8rem;
   align-items: center;
 }
 
@@ -409,12 +410,17 @@ body {
   font-weight: 700;
 }
 
-.hero__client,
-.hero__author-description,
-.hero__client-description {
+.hero__author-description {
+  display: inline;
   font-size: 1.4rem;
   line-height: 2.2;
+}
+
+.hero__client,
+.hero__client-description {
   display: inline-block;
+  font-size: 1.4rem;
+  line-height: 2.2;
 }
 
 .hero__client-box {
