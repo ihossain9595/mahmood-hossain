@@ -9,18 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/queries.css" />
 
     <title>Mahmood Hossain</title>
   </head>
 
   <body>
-    <!-- -------------------- -->
-    <!-- ------ HEADER ------ -->
+    <!-- ------------------------------------------------ -->
+    <!-- -------------------- HEADER -------------------- -->
     <header class="header">
       <div class="header__container">
         <a class="header__logo-link" href="index.html">
-          <img class="header__logo-image" src="/images/logo.svg" alt="Logo of Mahmood Hossain" />
+          <img class="header__logo-image" src="/img/logo.svg" alt="Logo of Mahmood Hossain" />
         </a>
         <nav class="header__navigation-box">
           <ul class="header__navigation-lists">
@@ -30,13 +32,33 @@
             <li class="header__navigation-list"><a class="header__navigation-link header__navigation-link-active" href="contact-me.html">Contact me</a></li>
           </ul>
         </nav>
+
+        <div class="button button--open-button" onclick="openNav()">
+          <img class="button__open-button-icon" src="/img/menu.svg" alt="Open Button" />
+        </div>
       </div>
     </header>
-    <!-- ------ HEADER ------ -->
-    <!-- -------------------- -->
+    <!-- -------------------- HEADER -------------------- -->
+    <!-- ------------------------------------------------ -->
 
-    <!-- ---------------------------- -->
-    <!-- ------ CALL TO ACTION ------ -->
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- -------------------- Tablet/Mobile Navigation Bar -------------------- -->
+    <div id="sidebar" class="sidebar">
+      <div class="button button--close-button" onclick="closeNav()">
+        <img class="button__close-button-icon" src="/img/delete.svg" alt="Close Button" />
+      </div>
+      <div class="sidebar__links">
+        <a class="sidebar__link" href="index.html">Home</a>
+        <a class="sidebar__link" href="about-me.html">About Me</a>
+        <a class="sidebar__link" href="freebies.html">Freebies</a>
+        <a class="sidebar__link" href="contact-me.html">Contact Me</a>
+      </div>
+    </div>
+    <!-- -------------------- Tablet/Mobile Navigation Bar -------------------- -->
+    <!-- ---------------------------------------------------------------------- -->
+
+    <!-- -------------------------------------------------------- -->
+    <!-- -------------------- CALL TO ACTION -------------------- -->
     <main>
       <div class="cta">
         <div class="cta__container">
@@ -169,7 +191,20 @@
         </div>
       </div>
     </main>
-    <!-- ------ CALL TO ACTION ------ -->
-    <!-- ---------------------------- -->
+    <!-- -------------------- CALL TO ACTION -------------------- -->
+    <!-- -------------------------------------------------------- -->
+
+    <!-- ------------------------------------------------ -->
+    <!-- -------------------- Script -------------------- -->
+    <script>
+      function openNav() {
+        document.getElementById("sidebar").style.width = "100vw";
+      }
+      function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+      }
+    </script>
+    <!-- -------------------- Script -------------------- -->
+    <!-- ------------------------------------------------ -->
   </body>
 </html>

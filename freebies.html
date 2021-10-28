@@ -9,18 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/queries.css" />
 
     <title>Mahmood Hossain</title>
   </head>
 
   <body>
-    <!-- -------------------- -->
-    <!-- ------ HEADER ------ -->
+    <!-- ------------------------------------------------ -->
+    <!-- -------------------- HEADER -------------------- -->
     <header class="header">
       <div class="header__container">
         <a class="header__logo-link" href="index.html">
-          <img class="header__logo-image" src="/images/logo.svg" alt="Logo of Mahmood Hossain" />
+          <img class="header__logo-image" src="/img/logo.svg" alt="Logo of Mahmood Hossain" />
         </a>
         <nav class="header__navigation-box">
           <ul class="header__navigation-lists">
@@ -30,103 +32,136 @@
             <li class="header__navigation-list"><a class="header__navigation-link" href="contact-me.html">Contact me</a></li>
           </ul>
         </nav>
+
+        <div class="button button--open-button" onclick="openNav()">
+          <img class="button__open-button-icon" src="/img/menu.svg" alt="Open Button" />
+        </div>
       </div>
     </header>
-    <!-- ------ HEADER ------ -->
-    <!-- -------------------- -->
+    <!-- -------------------- HEADER -------------------- -->
+    <!-- ------------------------------------------------ -->
 
-    <!-- ------------------ -->
-    <!-- ------ CARD ------ -->
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- -------------------- Tablet/Mobile Navigation Bar -------------------- -->
+    <div id="sidebar" class="sidebar">
+      <div class="button button--close-button" onclick="closeNav()">
+        <img class="button__close-button-icon" src="/img/delete.svg" alt="Close Button" />
+      </div>
+      <div class="sidebar__links">
+        <a class="sidebar__link" href="index.html">Home</a>
+        <a class="sidebar__link" href="about-me.html">About Me</a>
+        <a class="sidebar__link" href="freebies.html">Freebies</a>
+        <a class="sidebar__link" href="contact-me.html">Contact Me</a>
+      </div>
+    </div>
+    <!-- -------------------- Tablet/Mobile Navigation Bar -------------------- -->
+    <!-- ---------------------------------------------------------------------- -->
+
+    <!-- ---------------------------------------------- -->
+    <!-- -------------------- CARD -------------------- -->
     <main>
       <section class="card">
         <div class="card__container">
           <div class="card__preview-box">
             <div class="card__image-box">
-              <img class="card__image1" src="/images/ray-hennessy-nI4OwVnz0dw-unsplash.jpg" alt="Free Product Image" />
-              <img class="card__image2" src="/images/ray-hennessy-PHnBeYvpWgA-unsplash.jpg" alt="Free Product Image" />
+              <img class="card__image1" src="/img/ray-hennessy-nI4OwVnz0dw-unsplash.jpg" alt="Free Product Image" />
+              <img class="card__image2" src="/img/ray-hennessy-PHnBeYvpWgA-unsplash.jpg" alt="Free Product Image" />
             </div>
             <div class="card__information-box">
               <h2 class="card__title">Lorem ipsum dolor sit amet</h2>
-              <a class="card__download-button-link" href="#"><img class="card__download-button-image" src="/images/download-button.svg" alt="Download button" /></a>
+              <a class="card__download-button-link" href="#"><img class="card__download-button-image" src="/img/download-button.svg" alt="Download button" /></a>
             </div>
           </div>
 
           <div class="card__preview-box">
             <div class="card__image-box">
-              <img class="card__image1" src="/images/james-naphtali-4ZM8gigH_qU-unsplash.jpg" alt="Free Product Image" />
-              <img class="card__image2" src="/images/jan-kopriva-qYf74z7NBOU-unsplash.jpg" alt="Free Product Image" />
+              <img class="card__image1" src="/img/james-naphtali-4ZM8gigH_qU-unsplash.jpg" alt="Free Product Image" />
+              <img class="card__image2" src="/img/jan-kopriva-qYf74z7NBOU-unsplash.jpg" alt="Free Product Image" />
             </div>
             <div class="card__information-box">
               <h2 class="card__title">Cras placerat sem eget mollis euismod</h2>
-              <a class="card__download-button-link" href="#"><img class="card__download-button-image" src="/images/download-button.svg" alt="Download button" /></a>
+              <a class="card__download-button-link" href="#"><img class="card__download-button-image" src="/img/download-button.svg" alt="Download button" /></a>
             </div>
           </div>
 
           <div class="card__preview-box">
             <div class="card__image-box">
-              <img class="card__image1" src="/images/birger-strahl-ksiGE4hMiso-unsplash.jpg" alt="Free Product Image" />
-              <img class="card__image2" src="/images/birger-strahl-H4Mqn6uh8bo-unsplash.jpg" alt="Free Product Image" />
+              <img class="card__image1" src="/img/birger-strahl-ksiGE4hMiso-unsplash.jpg" alt="Free Product Image" />
+              <img class="card__image2" src="/img/birger-strahl-H4Mqn6uh8bo-unsplash.jpg" alt="Free Product Image" />
             </div>
             <div class="card__information-box">
               <h2 class="card__title">Nulla sit amet purus faucibus pretium augue in sollicitudin urna</h2>
-              <a class="card__download-button-link" href="#"><img class="card__download-button-image" src="/images/download-button.svg" alt="Download button" /></a>
+              <a class="card__download-button-link" href="#"><img class="card__download-button-image" src="/img/download-button.svg" alt="Download button" /></a>
             </div>
           </div>
 
           <div class="card__preview-box">
             <div class="card__image-box">
-              <img class="card__image1" src="/images/andy-holmes-D6TqIa-tWRY-unsplash.jpg" alt="Free Product Image" />
-              <img class="card__image2" src="/images/sergi-ferrete-MK2zokQ1f5Y-unsplash.jpg" alt="Free Product Image" />
+              <img class="card__image1" src="/img/andy-holmes-D6TqIa-tWRY-unsplash.jpg" alt="Free Product Image" />
+              <img class="card__image2" src="/img/sergi-ferrete-MK2zokQ1f5Y-unsplash.jpg" alt="Free Product Image" />
             </div>
             <div class="card__information-box">
               <h2 class="card__title">Lorem ipsum dolor sit</h2>
-              <a class="card__download-button-link" href="#"><img class="card__download-button-image" src="/images/download-button.svg" alt="Download button" /></a>
+              <a class="card__download-button-link" href="#"><img class="card__download-button-image" src="/img/download-button.svg" alt="Download button" /></a>
             </div>
           </div>
 
           <div class="card__preview-box">
             <div class="card__image-box">
-              <img class="card__image1" src="/images/sid-balachandran-vxlYukRAC50-unsplash.jpg" alt="Free Product Image" />
-              <img class="card__image2" src="/images/alice-washington-F8lWEId_MeA-unsplash.jpg" alt="Free Product Image" />
+              <img class="card__image1" src="/img/sid-balachandran-vxlYukRAC50-unsplash.jpg" alt="Free Product Image" />
+              <img class="card__image2" src="/img/alice-washington-F8lWEId_MeA-unsplash.jpg" alt="Free Product Image" />
             </div>
             <div class="card__information-box">
               <h2 class="card__title">Nam pretium elit at porta varius</h2>
-              <a class="card__download-button-link" href="#"><img class="card__download-button-image" src="/images/download-button.svg" alt="Download button" /></a>
+              <a class="card__download-button-link" href="#"><img class="card__download-button-image" src="/img/download-button.svg" alt="Download button" /></a>
             </div>
           </div>
 
           <div class="card__preview-box">
             <div class="card__image-box">
-              <img class="card__image1" src="/images/sumeet-b-H8Z_cJTI6r8-unsplash.jpg" alt="Free Product Image" />
-              <img class="card__image2" src="/images/jonathan-leppan-ktwf6kExFAw-unsplash.jpg" alt="Free Product Image" />
+              <img class="card__image1" src="/img/sumeet-b-H8Z_cJTI6r8-unsplash.jpg" alt="Free Product Image" />
+              <img class="card__image2" src="/img/jonathan-leppan-ktwf6kExFAw-unsplash.jpg" alt="Free Product Image" />
             </div>
             <div class="card__information-box">
               <h2 class="card__title">Nulla non tellus in dolor consequat maximus</h2>
-              <a class="card__download-button-link" href="#"><img class="card__download-button-image" src="/images/download-button.svg" alt="Download button" /></a>
+              <a class="card__download-button-link" href="#"><img class="card__download-button-image" src="/img/download-button.svg" alt="Download button" /></a>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <!-- ------ CARD ------ -->
-    <!-- ------------------ -->
+    <!-- -------------------- CARD -------------------- -->
+    <!-- ---------------------------------------------- -->
 
-    <!-- -------------------- -->
-    <!-- ------ FOOTER ------ -->
+    <!-- ------------------------------------------------ -->
+    <!-- -------------------- FOOTER -------------------- -->
     <footer class="footer">
       <div class="footer__container">
         <p class="footer__email"><a class="footer__email-link" href="mailto:hello@mahmoodhossain.com">hello@mahmoodhossain.com</a></p>
 
         <div class="footer__social-box">
-          <a class="footer__social-link" href="#"><img class="footer__social-image" src="/images/behance.svg" alt="Behance logo" /></a>
-          <a class="footer__social-link" href="#"><img class="footer__social-image" src="/images/dribbble.svg" alt="Dribbble logo" /></a>
-          <a class="footer__social-link" href="#"><img class="footer__social-image" src="/images/linkedin.svg" alt="Linkedin logo" /></a>
-          <a class="footer__social-link" href="#"><img class="footer__social-image" src="/images/instagram.svg" alt="Instagram logo" /></a>
-          <a class="footer__social-link" href="#"><img class="footer__social-image" src="/images/upwork.svg" alt="Upwork logo" /></a>
+          <a class="footer__social-link" href="#"><img class="footer__social-image" src="/img/behance.svg" alt="Behance logo" /></a>
+          <a class="footer__social-link" href="#"><img class="footer__social-image" src="/img/dribbble.svg" alt="Dribbble logo" /></a>
+          <a class="footer__social-link" href="#"><img class="footer__social-image" src="/img/linkedin.svg" alt="Linkedin logo" /></a>
+          <a class="footer__social-link" href="#"><img class="footer__social-image" src="/img/instagram.svg" alt="Instagram logo" /></a>
+          <a class="footer__social-link" href="#"><img class="footer__social-image" src="/img/upwork.svg" alt="Upwork logo" /></a>
         </div>
       </div>
     </footer>
-    <!-- ------ FOOTER ------ -->
-    <!-- -------------------- -->
+    <!-- -------------------- FOOTER -------------------- -->
+    <!-- ------------------------------------------------ -->
+
+    <!-- ------------------------------------------------ -->
+    <!-- -------------------- Script -------------------- -->
+    <script>
+      function openNav() {
+        document.getElementById("sidebar").style.width = "100vw";
+      }
+      function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+      }
+    </script>
+    <!-- -------------------- Script -------------------- -->
+    <!-- ------------------------------------------------ -->
   </body>
 </html>

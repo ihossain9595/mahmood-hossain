@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/queries.css" />
 
     <title>Mahmood Hossain</title>
   </head>
@@ -20,7 +22,7 @@
     <header class="header">
       <div class="header__container">
         <a class="header__logo-link" href="index.html">
-          <img class="header__logo-image" src="/images/logo.svg" alt="Logo of Mahmood Hossain" />
+          <img class="header__logo-image" src="/img/logo.svg" alt="Logo of Mahmood Hossain" />
         </a>
         <nav class="header__navigation-box">
           <ul class="header__navigation-lists">
@@ -30,10 +32,30 @@
             <li class="header__navigation-list"><a class="header__navigation-link" href="contact-me.html">Contact me</a></li>
           </ul>
         </nav>
+
+        <div class="button button--open-button" onclick="openNav()">
+          <img class="button__open-button-icon" src="/img/menu.svg" alt="Open Button" />
+        </div>
       </div>
     </header>
     <!-- -------------------- HEADER -------------------- -->
     <!-- ------------------------------------------------ -->
+
+        <!-- ---------------------------------------------------------------------- -->
+    <!-- -------------------- Tablet/Mobile Navigation Bar -------------------- -->
+    <div id="sidebar" class="sidebar">
+      <div class="button button--close-button" onclick="closeNav()">
+        <img class="button__close-button-icon" src="/img/delete.svg" alt="Close Button" />
+      </div>
+      <div class="sidebar__links">
+        <a class="sidebar__link" href="index.html">Home</a>
+        <a class="sidebar__link" href="about-me.html">About Me</a>
+        <a class="sidebar__link" href="freebies.html">Freebies</a>
+        <a class="sidebar__link" href="contact-me.html">Contact Me</a>
+      </div>
+    </div>
+    <!-- -------------------- Tablet/Mobile Navigation Bar -------------------- -->
+    <!-- ---------------------------------------------------------------------- -->
 
     <!-- ------------------------------------------------- -->
     <!-- -------------------- GALLERY -------------------- -->
@@ -41,7 +63,7 @@
       <div class="hero">
         <div class="hero__container">
           <div class="hero__image-box">
-            <img class="hero__image" src="/images/author.png" alt="Author's photo" />
+            <img class="hero__image" src="/img/author.png" alt="Author's photo" />
           </div>
 
           <div class="hero__information-box">
@@ -77,7 +99,7 @@
             <div class="hero__testimonial-box">
               <h2 class="hero__testimonial-title">Client Review</h2>
               <blockquote class="hero__testimonial-description">Working with Mahmood was excellent. His quick lorem turnaround time with attention to detail make him a great choice for your new logo design!</blockquote>
-              <img class="hero__testimonial-image" src="/images/quote.png" alt="Two quote signs" />
+              <img class="hero__testimonial-image" src="/img/quote.png" alt="Two quote signs" />
               <div class="hero__testimonial-dots">
                 <div class="hero__testimonial-dot hero__testimonial-dot-active">&nbsp;</div>
                 <div class="hero__testimonial-dot">&nbsp;</div>
@@ -90,5 +112,18 @@
     </main>
     <!-- -------------------- GALLERY -------------------- -->
     <!-- ------------------------------------------------- -->
+
+    <!-- ------------------------------------------------ -->
+    <!-- -------------------- Script -------------------- -->
+    <script>
+      function openNav() {
+        document.getElementById("sidebar").style.width = "100vw";
+      }
+      function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+      }
+    </script>
+    <!-- -------------------- Script -------------------- -->
+    <!-- ------------------------------------------------ -->
   </body>
 </html>
