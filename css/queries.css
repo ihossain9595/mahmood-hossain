@@ -47,13 +47,16 @@
   }
 }
 
+/* -----> 1050PX <----- */
+@media (max-width: 65.625em) {
+  .portfolio__container {
+    grid-template-columns: 1fr 25rem;
+  }
+}
+
 /* -----> 900PX <----- */
 @media (max-width: 56.25em) {
   .header__container {
-    padding: 3.2rem 3.2rem;
-  }
-
-  .footer__container {
     padding: 3.2rem 3.2rem;
   }
 
@@ -61,8 +64,21 @@
     display: none;
   }
 
+  .footer__container {
+    padding: 3.2rem 3.2rem;
+  }
+
   .gallery__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio__container {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio__detail-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .card__container {
@@ -126,6 +142,15 @@
 
 /* -----> 600PX <----- */
 @media (max-width: 37.5em) {
+  .portfolio__detail-boxes {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio__image-boxes {
+    grid-template-columns: 1fr;
+  }
+
   .gallery__container {
     grid-template-columns: 1fr;
   }
