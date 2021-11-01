@@ -100,7 +100,7 @@
     top: 0;
     right: 0;
     z-index: 2;
-    transition: all 0.5s;
+    transition: all 0.3s;
   }
 
   .sidebar__links {
@@ -198,5 +198,55 @@
 
   .footer__social-box {
     gap: 1.2rem;
+  }
+}
+
+@media (hover: none) {
+  .gallery__preview-box:hover .gallery__information-link {
+    display: none;
+  }
+
+  .gallery__preview-box:hover .gallery__image {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .portfolio__back-link:hover,
+  .portfolio__back-link:active {
+    color: #226089;
+  }
+
+  .hero__client-box:hover .hero__client::after {
+    width: 0;
+  }
+
+  .hero__testimonial-dot:hover {
+    background-color: #a8c6d9;
+  }
+
+  .card__image-box:hover .card__image2 {
+    opacity: 0;
+  }
+
+  .card__download-button-link:hover {
+    background-color: #226089;
+  }
+
+  .cta__description:hover {
+    color: #226089;
+  }
+
+  .cta__description-link:hover,
+  .cta__description-link:active {
+    color: #226089;
+  }
+
+  .cta__social-link:hover .cta__social-image-svg1 {
+    fill: #226089;
+  }
+
+  .cta__social-link:hover .cta__social-image-svg2 {
+    fill: #226089;
+    stroke: #226089;
   }
 }
