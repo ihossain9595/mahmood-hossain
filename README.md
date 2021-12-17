@@ -1,6 +1,6 @@
 # Mahmood Hossain
 
-A simple portfolio page
+A simple portfolio website
 
 ## Language Used
 
